@@ -4,9 +4,10 @@ This project reverse-engineered the Web Interface of DeepSeek at [it's official 
 
 ## Features
 
-- Simple API client for DeepSeek chat functionality
-- Bypasses the need for manual browser interaction
-- Lightweight and easy to integrate
+- Simple API client for DeepSeek chat functionality.
+- Mostly bypasses the need for manual browser interaction.
+- Lightweight and easy to integrate.
+- Provides Markdown syntax for AI outputs.
 
 ## To-do List
 
@@ -19,7 +20,18 @@ Future versions plan to include the following features:
 
 ## Dependencies
 
-This project depends solely on the wasmtime library.
+This project depends on the wasmtime and streamdown libraries.
+
+## Third-party assets
+
+### streamdown
+The `DeepSeekAPI/streamdown/` folder contains code from [Streamdown](https://github.com/day50-dev/Streamdown) and some of our modifications. All code in that directory, whether original or modified, remains under the [original MIT license](DeepSeekAPI/streamdown/LICENSE.MIT).
+
+**Files:**
+- `DeepSeekAPI/plugins/latex.py` - Original Streamdown helper code for latex
+- `DeepSeekAPI/streamdown/sd.py` - Original Streamdown code
+- `DeepSeekAPI/streamdown/adapter.py` - Our adapter code
+- `DeepSeekAPI/streamdown/__init__.py` - Our wrapper code
 
 ## Disclaimer
 
@@ -44,3 +56,7 @@ You agree not to use this software for any illegal, harmful, or abusive purposes
 This project is licensed under the GNU General Affero Public License v3.0.
 
 See the [LICENSE](LICENSE) file for the full text.
+
+The streamdown module is licensed under the MIT License.
+
+See the [LICENSE.MIT](LICENSE.MIT) file for the full text.

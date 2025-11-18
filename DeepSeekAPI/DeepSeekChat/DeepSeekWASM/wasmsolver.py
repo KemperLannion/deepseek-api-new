@@ -1,3 +1,12 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""
+GNU Affero General Public License v3.0
+
+Copyright (C) 2025 smkttl
+"""
+
 import json
 import base64
 import struct
